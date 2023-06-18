@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA en JavaScript</title>
+</head>
+<body>
+  <button id="botonEntrenamiento">Entrenar</button>
+
+  <h2 id="entrenamientoListo" style="display:none;">Entrenamiento completo</h2>
+
+  <br><br>
+
+  <div id="preguntar" style="display:none;">
+    <label for="seleccionacolor">
+      <strong>Seleccione el color</strong>
+    </label>
+    <input type="color" id="colorSeleccionado">
+    <button id="botonResultado">Dame un resultado</button>
+    <br>
+    <h2 id="resultadoFinal"></h2>
+  </div>
+
+  <!--Javascript-->
+  <script src="https://unpkg.com/brain.js@2.0.0-beta.16/dist/browser.js"></script><!--BrainJS-->
+  <script src="scripts.js"></script>
+
+</body>
+</html>
