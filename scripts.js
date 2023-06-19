@@ -37,14 +37,14 @@ document.getElementById("botonResultado").addEventListener("click", function(){
   var salida = modelo.run([r/255,g/255,b/255]);
   console.log(JSON.stringify(salida))
   var resultado = esOscuro(salida.oscuro);
-  document.getElementById(resultadoFinal).innerHTML= "El color es "+resultado;
+  document.getElementById('resultadoFinal').innerHTML= "El color es "+resultado;
 });
 
 function esOscuro(salida){
   if (salida>0.5){
     return 'oscuro'
-  } else if (salida<0.5){
-    return 'claro'
+  //} else if (salida<0.5){
+    //return 'claro'
   } else {
     return 'algo no anda bien'
   }
