@@ -28,14 +28,7 @@ function generarListaEntrenamiento() {
   lista.push({ input: [192/255,192/255,192/255], output: { claro: 1 } });
   // Gris Oscuro (64,64,64)
   lista.push({ input: [64/255,64/255,64/255], output: { oscuro: 1 } });
-  // Otros colores claros
-  // lista.push({ input: [255 / 255, 255 / 255, 0], output: { claro: 1 } }); // Amarillo
-  // lista.push({ input: [0, 255 / 255, 0], output: { claro: 1 } }); // Verde
-  // lista.push({ input: [129 / 255, 129 / 255, 129 / 255], output: { oscuro: 1 } }); //ultimo claro
-  // Otros colores oscuros
-  // lista.push({ input: [128 / 255, 0, 0], output: { oscuro: 1 } }); // Rojo oscuro
-  // lista.push({ input: [0, 0, 128 / 255], output: { oscuro: 1 } }); // Azul oscuro
-  // lista.push({ input: [127 / 255, 127 / 255, 127 / 255], output: { oscuro: 1 } }); //ultimo oscuro
+
   console.log(JSON.stringify(lista));
   return lista;
 }
@@ -69,5 +62,5 @@ document.getElementById("botonIncorrecto").addEventListener("click", function ()
     lista.push({input: rgb, output: {oscuro:1}})
   }
   console.log(JSON.stringify(lista));
-  modelo.train(lista);
+  modelo.train(lista)
 });
