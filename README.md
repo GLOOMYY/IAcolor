@@ -1,2 +1,2 @@
 # IAcolor
- IA que responde si un color es claro u oscuro
+__IA__ construida con __BrainJS__ que distingue 
